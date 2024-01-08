@@ -2227,6 +2227,69 @@ pub mod root {
 
         }
 
+	pub mod FighterSpecializer_Kirby {
+            #[allow(unused_imports)]
+            use super::super::super::root;
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby10copy_setupERNS_21FighterModuleAccessorEiNS_11FighterKindEbb"]
+                pub fn copy_setup(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                    arg2: i32,
+                    arg3: root::app::FighterKind,
+                    arg4: bool,
+                    arg5: bool
+                );
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby10drink_itemERNS_7FighterE"]
+                pub fn drink_item(
+                    arg1: u8 
+                ) -> u64;
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby13get_copy_kindERKNS_21FighterModuleAccessorE"]
+                pub fn get_copy_kind(
+                    arg1: *mut root::app::FighterModuleAccessor
+                ) -> u64;
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby16get_copy_slot_noERKNS_21FighterModuleAccessorE"]
+                pub fn get_copy_slot_no(
+                    arg1: *mut root::app::FighterModuleAccessor
+                ) -> u64;
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby13inhale_objectERNS_7FighterE"]
+                pub fn inhale_object(
+                    arg1: u8 
+                );
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby28purin_clear_copy_attack_dataERNS_26BattleObjectModuleAccessorE"]
+                pub fn purin_clear_copy_attack_data(
+                    arg1: *mut root::app::BattleObjectModuleAccessor
+                );
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby28purin_remove_effect_flushingERNS_26BattleObjectModuleAccessorE"]
+                pub fn purin_remove_effect_flushing(
+                    arg1: *mut root::app::BattleObjectModuleAccessor
+                );
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby27purin_req_effect_dash_smokeERNS_26BattleObjectModuleAccessorE"]
+                pub fn purin_req_effect_dash_smoke(
+                    arg1: *mut root::app::BattleObjectModuleAccessor
+                );
+            }
+		extern "C" {
+                #[link_name = "\u{1}_ZN3app24FighterSpecializer_Kirby15purin_set_powerERNS_26BattleObjectModuleAccessorE"]
+                pub fn purin_set_power(
+                    arg1: *mut root::app::BattleObjectModuleAccessor
+                );
+            }
+	}
+
         pub mod FighterSpecializer_Peach {
             #[allow(unused_imports)]
             use super::super::super::root;
@@ -2389,11 +2452,24 @@ pub mod root {
                 );
             }
             extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet13charge_pointsERNS_21FighterModuleAccessorE"]
+                pub fn charge_points(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) -> u64;
+            }
+            extern "C" {
                 #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet15change_hud_kindERNS_7FighterEi"]
                 pub fn change_hud_kind(
                     arg1: *mut root::app::Fighter,
                     arg2: i32,
                 );
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet13get_magickindERNS_21FighterModuleAccessorEi"]
+                pub fn get_magickind(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                    arg2: i32
+                ) -> u64;
             }
             extern "C" {
                 #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet17set_flag_to_tableERNS_21FighterModuleAccessorEibi"]
@@ -2412,10 +2488,81 @@ pub mod root {
                 );
             }
             extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet24exit_special_n_tron_holdERNS_21FighterModuleAccessorE"]
+                pub fn exit_special_n_tron(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) ;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet30get_final_target_pos_base_workERNS_21FighterModuleAccessorE"]
+                pub fn get_final_target_pos_base_work(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) -> u64;
+            }
+            extern "C" {
                 #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet25get_special_hi_jump_speedERNS_21FighterModuleAccessorE"]
                 pub fn get_special_hi_jump_speed(
                     arg1: *mut root::app::FighterModuleAccessor
                 ) -> nnsdk::root::nn::util::Vector3f;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet22get_active_thunder_numERNS_21FighterModuleAccessorEi"]
+                pub fn get_active_thunder_num(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                    arg2: i32
+                ) -> i32;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet20check_special_lw_posERNS_21FighterModuleAccessorE"]
+                pub fn check_special_lw_pos(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) -> u32;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet22special_lw_heal_damageERNS_21FighterModuleAccessorE"]
+                pub fn special_lw_heal_damage(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) ;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet23send_final_attack_eventERNS_21FighterModuleAccessorE"]
+                pub fn send_final_attack_event(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) ;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet19get_final_chrom_posERNS_21FighterModuleAccessorE"]
+                pub fn get_final_chrom_pos(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) -> root::phx::Vector2f;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet19set_final_chrom_posERNS_21FighterModuleAccessorEN3phx8Vector3fE"]
+                pub fn set_final_chrom_pos(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                    arg2: *const root::phx::Vector3f,
+                ) ;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet18get_final_chrom_lrERNS_21FighterModuleAccessorE"]
+                pub fn get_final_chrom_lr(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                ) -> f32;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet18set_final_chrom_lrERNS_21FighterModuleAccessorEf"]
+                pub fn set_final_chrom_lr(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                    arg2: f32
+                ) ;
+            }
+            extern "C" {
+                #[link_name = "\u{1}_ZN3app25FighterSpecializer_Reflet28set_final_chrom_joint_rotateERNS_21FighterModuleAccessorEN3phx6Hash40ENS3_8Vector3fE"]
+                pub fn set_final_chrom_joint_rotate(
+                    arg1: *mut root::app::FighterModuleAccessor,
+                    arg2: root::phx::Hash40,
+                    arg3: *const root::phx::Vector3f,
+                ) ;
             }
         }
 
